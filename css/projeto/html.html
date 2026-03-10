@@ -1,62 +1,101 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Calculadora Geométrica</title>
+
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
+
     <div class="display">
         <h1>Soma</h1>
-        <input type="number" id="1">
-        <input type="number" id="2">
-        <h2 id="result"></h2>
-        <button id="somar" onclick="somar()">Somar</button>
+
+        <input type="number" id="soma1" placeholder="Número 1">
+        <input type="number" id="soma2" placeholder="Número 2">
+
+        <button onclick="somar()">Somar</button>
+
+        <h2 id="resultSoma"></h2>
     </div>
+
+
     <div class="display">
-        <h1>Subtrair</h1>
-        <input type="number" id="1">
-        <input type="number" id="2">
-        <h2 id="result1"></h2>
-        <button id="menos" onclick="subtrair()">Subtrair</button>
+        <h1>Subtração</h1>
+
+        <input type="number" id="sub1" placeholder="Número 1">
+        <input type="number" id="sub2" placeholder="Número 2">
+
+        <button onclick="subtrair()">Subtrair</button>
+
+        <h2 id="resultSub"></h2>
     </div>
+
+
     <div class="display">
-        <h1>Multiplicar</h1>
-        <input type="number" id="1">
-        <input type="number" id="2">
-        <h2 id="result2"></h2>
-        <button id="somar" onclick="multiplicar()">Multiplicar</button>
+        <h1>Multiplicação</h1>
+
+        <input type="number" id="mult1" placeholder="Número 1">
+        <input type="number" id="mult2" placeholder="Número 2">
+
+        <button onclick="multiplicar()">Multiplicar</button>
+
+        <h2 id="resultMult"></h2>
     </div>
+
+
     <div class="display">
-        <h1>Area do Triangulo</h1>
-        <input type="number" id="1" placeholder="Base">
-        <input type="number" id="2" placeholder="Altura">
-        <h2 id="resultado-triangulo"></h2>
-        <button id="somar" onclick="areaTriangulo()">Calcular</button>
+        <h1>Área do Triângulo</h1>
+
+        <input type="number" id="triBase" placeholder="Base">
+        <input type="number" id="triAltura" placeholder="Altura">
+
+        <button onclick="areaTriangulo()">Calcular</button>
+
+        <h2 id="resultTri"></h2>
     </div>
+
+
     <div class="display">
-        <h1>Area do Trapézio</h1>
-        <input type="number" id="1" placeholder="Base">
-        <input type="number" id="2" placeholder="Altura">
-        <input type="number" id="3" placeholder="Altura">
-        <h2 id="resultado-triangulo"></h2>
-        <button id="somar" onclick="areaTrapezio()">Calcular</button>
+        <h1>Área do Trapézio</h1>
+
+        <input type="number" id="trapBaseMaior" placeholder="Base maior">
+        <input type="number" id="trapBaseMenor" placeholder="Base menor">
+        <input type="number" id="trapAltura" placeholder="Altura">
+
+        <button onclick="areaTrapezio()">Calcular</button>
+
+        <h2 id="resultTrap"></h2>
     </div>
+
+
     <div class="display">
-        <h1>Area do Circulo</h1>
-        <input type="number" id="1" placeholder="Base">
-        <h2 id="resultado-triangulo"></h2>
-        <button id="somar" onclick="areaCirculo()">Calcular</button>
+        <h1>Área do Círculo</h1>
+
+        <input type="number" id="raio" placeholder="Raio">
+
+        <button onclick="areaCirculo()">Calcular</button>
+
+        <h2 id="resultCirculo"></h2>
     </div>
+
+
     <div class="display">
-        <h1>Area do Trapézio</h1>
-        <input type="number" id="1" placeholder="Base">
-        <input type="number" id="2" placeholder="Altura">
-        <input type="number" id="3" placeholder="Altura">
-        <h2 id="resultado-triangulo"></h2>
-        <button id="somar" onclick="areaTrapezio()">Calcular</button>
+        <h1>Área do Losango</h1>
+
+        <input type="number" id="diagMaior" placeholder="Diagonal maior">
+        <input type="number" id="diagMenor" placeholder="Diagonal menor">
+
+        <button onclick="areaLosango()">Calcular</button>
+
+        <h2 id="resultLosango"></h2>
     </div>
-    <script src="/css/projeto/script.js"></script>
+
+
+    <script src="script.js"></script>
+
 </body>
 </html>

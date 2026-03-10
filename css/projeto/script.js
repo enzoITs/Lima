@@ -1,101 +1,56 @@
 function somar() {
-    let num1 = parseFloat(document.getElementById('1').value);
-    let num2 = parseFloat(document.getElementById('2').value);
-    document.getElementById('result').innerText = num1 + num2;
+let n1 = parseFloat(document.getElementById("soma1").value);
+let n2 = parseFloat(document.getElementById("soma2").value);
+
+document.getElementById("resultSoma").innerText = n1 + n2;
 }
 
 function subtrair() {
-    let num1 = parseFloat(document.getElementById('1').value);
-    let num2 = parseFloat(document.getElementById('2').value);
-    let resultado = num1 - num2;
-    document.getElementById('result1').innerText = resultado;
+let n1 = parseFloat(document.getElementById("sub1").value);
+let n2 = parseFloat(document.getElementById("sub2").value);
+
+document.getElementById("resultSub").innerText = n1 - n2;
 }
 
 function multiplicar() {
-    let num1 = parseFloat(document.getElementById('1').value)
-    let num2 = parseFloat(document.getElementById('2').value)
-    let resultado = num1 * num2;
-    document.getElementById('result2').innerText = num1 * num2;
+let n1 = parseFloat(document.getElementById("mult1").value);
+let n2 = parseFloat(document.getElementById("mult2").value);
+
+document.getElementById("resultMult").innerText = n1 * n2;
 }
 
 function areaTriangulo() {
-    let num1 = parseFloat(document.getElementById('1').value);
-    let num2 = parseFloat(document.getElementById('2').value);
-    let resultado = (num1 * num2) / 2;
-    document.getElementById('resultado-triangulo').innerText = resultado;
-}
+let base = parseFloat(document.getElementById("triBase").value);
+let altura = parseFloat(document.getElementById("triAltura").value);
 
-function areaQuadrado() {
-    let num1 = parseFloat(document.getElementById('1').value);
-    let resultado = num1 * num1;
-    document.getElementById('resultado-triangulo').innerText = resultado;
-}
+let area = (base * altura) / 2;
 
-function areaRetangulo() {
-    let num1 = parseFloat(document.getElementById('1').value);
-    let num2 = parseFloat(document.getElementById('2').value);
-    let resultado = (num1 * num2);
-    document.getElementById('resultado-triangulo').innerText = resultado;    
+document.getElementById("resultTri").innerText = area;
 }
 
 function areaTrapezio() {
-    let num1 = parseFloat(document.getElementById('1').value)
-    let num2 = parseFloat(document.getElementById('2').value);
-    let num3 = parseFloat(document.getElementById('3').value);
-    let resultado = [(num1 + num2) * num3] / 2;
-    document.getElementById('resultado-triangulo').innerText = resultado;
+let B = parseFloat(document.getElementById("trapBaseMaior").value);
+let b = parseFloat(document.getElementById("trapBaseMenor").value);
+let h = parseFloat(document.getElementById("trapAltura").value);
+
+let area = ((B + b) * h) / 2;
+
+document.getElementById("resultTrap").innerText = area;
+}
+
+function areaCirculo() {
+let r = parseFloat(document.getElementById("raio").value);
+
+let area = Math.PI * (r ** 2);
+
+document.getElementById("resultCirculo").innerText = area.toFixed(2);
 }
 
 function areaLosango() {
-    let num1 = parseFloat(document.getElementById('1').value);
-    let num2 = parseFloat(document.getElementById('2').value);
-    let resultado = (num1 * num2) / 2;
-    document.getElementById('resultado-triangulo').innerText = resultado;
-}
+let D = parseFloat(document.getElementById("diagMaior").value);
+let d = parseFloat(document.getElementById("diagMenor").value);
 
-function areaCirculo() {
-    let num1 = parseFloat(document.getElementById('1').value);
-    let resultado = (3,14 * num1**2);
-    document.getElementById('resultado-triangulo').innerText = resultado;
-}
+let area = (D * d) / 2;
 
-function areaSetorCircular() {
-    let num1 = parseFloat(document.getElementById('1').value); // Ângulo (α)
-    let num2 = parseFloat(document.getElementById('2').value); // Raio (r)
-    let resultado = (num1 / 360) * 3.14 * (num2 ** 2);
-    document.getElementById('resultado-triangulo').innerText = resultado;
-}
-
-function areaCoroaCircular() {
-    let num1 = parseFloat(document.getElementById('1').value); // Raio maior (R)
-    let num2 = parseFloat(document.getElementById('2').value); // Raio menor interno (r)
-    let resultado = 3.14 * ((num1 ** 2) - (num2 ** 2));
-    document.getElementById('resultado-triangulo').innerText = resultado;
-}
-
-function areaElipse() {
-    let num1 = parseFloat(document.getElementById('1').value); // Semieixo maior (a)
-    let num2 = parseFloat(document.getElementById('2').value); // Semieixo menor (b)
-    let resultado = 3.14 * num1 * num2;
-    document.getElementById('resultado-triangulo').innerText = resultado;
-}
-
-function areaParalelogramo() {
-    let num1 = parseFloat(document.getElementById('1').value); // Base (b)
-    let num2 = parseFloat(document.getElementById('2').value); // Altura perpendicular (h)
-    let resultado = num1 * num2;
-    document.getElementById('resultado-triangulo').innerText = resultado;
-}
-
-function areaPoligonoRegular() {
-    let num1 = parseFloat(document.getElementById('1').value); // Semiperímetro (p)
-    let num2 = parseFloat(document.getElementById('2').value); // Apótema (a)
-    let resultado = num1 * num2;
-    document.getElementById('resultado-triangulo').innerText = resultado;
-}
-
-function areaCirculo() {
-    let num1 = parseFloat(document.getElementById('1').value);
-    let resultado = 3.14 * (num1 ** 2);
-    document.getElementById('resultado-triangulo').innerText = resultado;
+document.getElementById("resultLosango").innerText = area;
 }
