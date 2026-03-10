@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculadora Geométrica</title>
 
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/css/projeto/style.css">
 </head>
 
 <body>
@@ -57,6 +57,18 @@
 
         <h2 id="resultTri"></h2>
     </div>
+    
+    
+    <div class="display">
+        <h1>Área do Quadrado</h1>
+
+        <input type="number" id="lado" placeholder="Lado">
+
+
+        <button onclick="areaQuadrado()">Calcular</button>
+
+        <h2 id="resultadoQuadrado"></h2>
+    </div>
 
 
     <div class="display">
@@ -75,11 +87,11 @@
     <div class="display">
         <h1>Área do Círculo</h1>
 
-        <input type="number" id="raio" placeholder="Raio">
+        <input type="number" id="circulo" placeholder="Raio">
 
         <button onclick="areaCirculo()">Calcular</button>
 
-        <h2 id="resultCirculo"></h2>
+        <h2 id="resultadoCirculo"></h2>
     </div>
 
 
@@ -93,9 +105,68 @@
 
         <h2 id="resultLosango"></h2>
     </div>
+    
+    
+    <div class="display">
+        <h1>Área do Setor Circular</h1>
 
+        <input type="number" id="1" placeholder="Angulo">
+        <input type="number" id="2" placeholder="Raio">
 
-    <script src="script.js"></script>
+        <button onclick="areaSetorCircular()">Calcular</button>
+
+        <h2 id="resultadoSetor"></h2>
+    </div>
+    
+    
+    <div class="display">
+        <h1>Área do Coroa Circular</h1>
+
+        <input type="number" id="3" placeholder="Raio maior">
+        <input type="number" id="4" placeholder="Raio menor">
+
+        <button onclick="areaCoroaCircular()">Calcular</button>
+
+        <h2 id="resultadoCoroa"></h2>
+    </div>
+    
+    
+    <div class="display">
+        <h1>Área da Elipse</h1>
+
+        <input type="number" id="5" placeholder="Semieixo maior">
+        <input type="number" id="6" placeholder="Semieixo menor">
+
+        <button onclick="areaElipse()">Calcular</button>
+
+        <h2 id="resultadoElipse"></h2>
+    </div>
+    
+    
+    <div class="display">
+        <h1>Área do Paralelogramo</h1>
+
+        <input type="number" id="7" placeholder="Base">
+        <input type="number" id="8" placeholder="Altura">
+
+        <button onclick="areaParalelogramo()">Calcular</button>
+
+        <h2 id="resultadoParalelogramo"></h2>
+    </div>
+    
+    
+    <div class="display">
+        <h1>Área da Poligono Regular</h1>
+
+        <input type="number" id="9" placeholder="Base">
+        <input type="number" id="10" placeholder="Altura">
+
+        <button onclick="areaPoligonoRegular()">Calcular</button>
+
+        <h2 id="resultadoPoligono"></h2>
+    </div>
+
+    <script src="/css/projeto/script.js"></script>
 
 </body>
 </html>
